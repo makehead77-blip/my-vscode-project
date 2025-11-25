@@ -183,22 +183,28 @@ body.about-page { background-color: #ffffff; }
 
 /* [7] 반응형 (Mobile) */
 @media (max-width: 768px) {
+    /* 데스크탑 요소 숨김 */
     .desktop-nav, .desktop-social { display: none; }
-    .mobile-toggle { display: block; }
     
-    /* ▼▼▼ [수정 부분] 배경색을 흰색(#fff)에서 투명(transparent)으로 변경 ▼▼▼ */
-    header { 
-        background-color: transparent; 
-    }
-    /* ▲▲▲ 수정 완료 ▲▲▲ */
+    /* 모바일 요소 표시 */
+    .mobile-toggle { display: block; }
 
+    /* 헤더 배경 투명 처리 (이미지와 겹치기 위함) */
+    header { background-color: transparent; }
+    
+    /* 그리드 1열로 변경 */
     .grid-container { grid-template-columns: 1fr; gap: 10px; }
     
-    .about-container { margin-top: 100px; }
+    /* [About 페이지 모바일 수정] */
+    .about-container { 
+        margin-top: 100px; 
+        /* ▼▼▼ 좌우 여백을 20px에서 40px로 늘림 ▼▼▼ */
+        padding: 0 65px; 
+    }
     .left-content { font-size: 20px; }
     
-    /* 상세 페이지의 경우 상단 여백 제거 (이미지를 맨 위로 올리기 위해) */
-    .detail-container { padding-top: 0; } 
-    .detail-text-area { width: 100%; margin-bottom: 60px; margin-top: 100px; /* 텍스트는 내려줌 */ }
+    /* Works 상세 모바일 */
+    .detail-container { padding-top: 0; }
+    .detail-text-area { width: 100%; margin-bottom: 60px; margin-top: 100px; }
     .detail-image-area { gap: 60px; padding-bottom: 80px; }
 }
