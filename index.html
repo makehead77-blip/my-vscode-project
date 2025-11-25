@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mount Corner Brick</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="site-title"><a href="index.html">MCB.</a></div>
+        <nav class="desktop-nav">
+            <a href="about.html">ABOUT</a>
+            <a href="index.html" class="active">WORKS</a>
+            <a href="exhibition.html">EXHIBITION</a>
+        </nav>
+        <div class="social-link desktop-social">
+            <a href="https://www.instagram.com/seungjin_yang_/" target="_blank">INSTAGRAM</a>
+        </div>
+        <div class="mobile-toggle" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+    </header>
+
+    <div class="mobile-drawer" id="mobileDrawer">
+        <a href="about.html">ABOUT</a>
+        <a href="index.html" class="active">WORKS</a>
+        <a href="exhibition.html">EXHIBITION</a>
+        <a href="https://www.instagram.com/" target="_blank">INSTAGRAM</a>
+    </div>
+
+    <main class="grid-container">
+        
+        <a href="works01.html" class="grid-item">
+            <img src="https://ecimg.cafe24img.com/pg1138b40302952044/mountcornerbrick/web/product/medium/20250210/8ffcb158110f275eb5f09f2e509ce1c9.jpg" alt="Work 1">
+        </a>
+        
+        <a href="works02.html" class="grid-item">
+            <img src="https://ecimg.cafe24img.com/pg1138b40302952044/mountcornerbrick/MCB_ABOUT.png" alt="Work 2">
+        </a>
+
+        <a href="works03.html" class="grid-item">
+            <img src="https://ecimg.cafe24img.com/pg1138b40302952044/mountcornerbrick/web/product/medium/20250211/86cb69695092ac2282dfb8f8663df9de.jpg" alt="Work 3">
+        </a>
+
+        <a href="works04.html" class="grid-item">
+            <img src="https://ecimg.cafe24img.com/pg1138b40302952044/mountcornerbrick/web/product/medium/20250210/04db8faefe9574a9b64286156eadb2d6.jpg" alt="Work 4">
+        </a>
+
+        <a href="works05.html" class="grid-item">
+            <img src="https://ecimg.cafe24img.com/pg1138b40302952044/mountcornerbrick/web/product/medium/20250210/580489145f7ec777a200f0bdc223f5c8.jpg" alt="Work 5">
+        </a>
+
+        <a href="works06.html" class="grid-item">
+            <img src="//ecimg.cafe24img.com/pg1138b40302952044/mountcornerbrick/HIGH1.png" alt="Work 6">
+        </a>
+
+        <a href="works07.html" class="grid-item">
+            <img src="https://ecimg.cafe24img.com/pg1138b40302952044/mountcornerbrick/web/upload/NNEditor/20250210/20250208_182801.jpg" alt="Work 7">
+        </a>
+
+        <a href="works08.html" class="grid-item">
+            <img src="https://ecimg.cafe24img.com/pg1138b40302952044/mountcornerbrick/web/product/medium/20251002/df1b35d92988ee60b3d5c7e87c21a81a.jpg" alt="Work 8">
+        </a>
+
+        <a href="works09.html" class="grid-item">
+            <img src="https://ecimg.cafe24img.com/pg1138b40302952044/mountcornerbrick/web/upload/NNEditor/20240909/1725861786351.jpeg" alt="Work 9">
+        </a>
+
+        <a href="works10.html" class="grid-item">
+            <img src="//ecimg.cafe24img.com/pg1138b40302952044/mountcornerbrick/HIGH2.png" alt="Work 10">
+        </a>
+
+        <a href="works11.html" class="grid-item">
+            <img src="//ecimg.cafe24img.com/pg1138b40302952044/mountcornerbrick/HIGH3.png" alt="Work 11">
+        </a>
+
+        <a href="works12.html" class="grid-item">
+            <img src="//ecimg.cafe24img.com/pg1138b40302952044/mountcornerbrick/HIGH4.png" alt="Work 12">
+        </a>
+
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const header = document.getElementById('main-header');
+            const toggleBtn = document.querySelector('.mobile-toggle');
+            const drawer = document.getElementById('mobileDrawer');
+            header.classList.toggle('menu-open');
+            toggleBtn.classList.toggle('open');
+            drawer.classList.toggle('open');
+            document.body.style.overflow = drawer.classList.contains('open') ? 'hidden' : 'auto';
+        }
+    </script>
+</body>
+</html>

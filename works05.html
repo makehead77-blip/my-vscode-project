@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Works - Mount Corner Brick</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="site-title"><a href="index.html">MCB.</a></div>
+        <nav class="desktop-nav">
+            <a href="about.html">ABOUT</a>
+            <a href="index.html" class="active">WORKS</a>
+            <a href="exhibition.html">EXHIBITION</a>
+        </nav>
+        <div class="social-link desktop-social">
+            <a href="https://www.instagram.com/seungjin_yang_/" target="_blank">INSTAGRAM</a>
+        </div>
+        <div class="mobile-toggle" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+    </header>
+
+    <div class="mobile-drawer" id="mobileDrawer">
+        <a href="about.html">ABOUT</a>
+        <a href="index.html" class="active">WORKS</a>
+        <a href="exhibition.html">EXHIBITION</a>
+        <a href="https://www.instagram.com/seungjin_yang_/" target="_blank">INSTAGRAM</a>
+    </div>
+
+    <main class="detail-container">
+        
+        <div class="detail-text-area">
+            <div class="d-title">팟팟 (100x100x90mm)</div>
+            <div class="d-desc">
+볼드하고 견고한 외형과 그 안에 담긴 미니 식물의 극적인 대비를 보여줍니다. 두껍고 단단해 보이는 깨끗한 흰색 세라믹 화분 속에, 그 크기가 너무나 작고 앙증맞은 선인장이나 다육식물이 홀로 자리 잡고 있습니다. 이 물리적인 크기와 형태의 대조는 시선을 즉각적으로 사로잡는 강력한 시각적 효과를 만들어내며, 작은 식물의 존재감과 생명력을 강조합니다.
+            </div>
+        </div>
+
+        <div class="detail-image-area">
+            <img src="https://ecimg.cafe24img.com/pg1138b40302952044/mountcornerbrick/web/upload/NNEditor/20240906/05.png" alt="Detail 1">
+            <img src="https://ecimg.cafe24img.com/pg1138b40302952044/mountcornerbrick/web/upload/NNEditor/20250210/20250208_2140152028129.jpg" alt="Detail 2">
+        </div>
+
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const header = document.getElementById('main-header');
+            const toggleBtn = document.querySelector('.mobile-toggle');
+            const drawer = document.getElementById('mobileDrawer');
+            header.classList.toggle('menu-open');
+            toggleBtn.classList.toggle('open');
+            drawer.classList.toggle('open');
+            document.body.style.overflow = drawer.classList.contains('open') ? 'hidden' : 'auto';
+        }
+    </script>
+</body>
+</html>

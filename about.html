@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Mount Corner Brick</title>
+    
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="about-page">
+
+    <header id="main-header">
+        <div class="site-title"><a href="index.html">MCB.</a></div>
+        
+        <nav class="desktop-nav">
+            <a href="about.html" class="active">ABOUT</a>
+            <a href="index.html">WORKS</a>
+            <a href="exhibition.html">EXHIBITION</a>
+        </nav>
+
+        <div class="social-link desktop-social">
+            <a href="https://www.instagram.com/seungjin_yang_/" target="_blank">INSTAGRAM</a>
+        </div>
+
+        <div class="mobile-toggle" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+    </header>
+
+    <div class="mobile-drawer" id="mobileDrawer">
+        <a href="about.html">ABOUT</a>
+        <a href="index.html">WORKS</a>
+        <a href="exhibition.html">EXHIBITION</a>
+        <a href="https://www.instagram.com/seungjin_yang_/" target="_blank">INSTAGRAM</a>
+    </div>
+
+    <main class="about-container">
+        <div class="left-content">
+            <div>
+                마운트코너브릭(MCB)은 익숙함 속에서 새로운 가치를 찾아내는 <span class="text-highlight">세라믹 스튜디오</span>입니다. 
+                우리 주변의 흔한 사물에 독창적인 생명력을 불어넣어, 세상에 단 하나뿐인 듯 개성 강한 홈퍼니싱 작품으로 새롭게 선보입니다.
+            
+                MCB 디자인의 핵심은 <span class="text-highlight">평범함 속에 감춰진 특별함</span>을 재발견 하는 데 있습니다. 사물의 기본 형태와 물성에서 영감을 얻어 고정관념에서 
+                벗어나 대상을 해체하고 재조합하는 과정을 통해, 기능과 아름다움이 완벽하게 균형을 이루는 오브제를 만듭니다.
+             
+                저희는 창의적 라이프스타일과 미적 안목을 반영하는 매개체를 통해, 고객들이 자신만의 공간을 주체적으로 가꾸는 즐거움과 일상에서 
+                아름다움을 발견하는 <span class="text-highlight">특별한 영감을</span> 얻도록 돕고자 합니다.
+                         
+                <br><br>
+                E. info@mountcornerbrick.com
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const header = document.getElementById('main-header');
+            const toggleBtn = document.querySelector('.mobile-toggle');
+            const drawer = document.getElementById('mobileDrawer');
+            header.classList.toggle('menu-open');
+            toggleBtn.classList.toggle('open');
+            drawer.classList.toggle('open');
+            
+            // 메뉴 열렸을 때 스크롤 방지
+            if (drawer.classList.contains('open')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'auto';
+            }
+        }
+    </script>
+</body>
+</html>

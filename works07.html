@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Works 01 - Mount Corner Brick</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="site-title"><a href="index.html">MCB.</a></div>
+        <nav class="desktop-nav">
+            <a href="about.html">ABOUT</a>
+            <a href="index.html" class="active">WORKS</a>
+            <a href="exhibition.html">EXHIBITION</a>
+        </nav>
+        <div class="social-link desktop-social">
+            <a href="https://www.instagram.com/seungjin_yang_/" target="_blank">INSTAGRAM</a>
+        </div>
+        <div class="mobile-toggle" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+    </header>
+
+    <div class="mobile-drawer" id="mobileDrawer">
+        <a href="about.html">ABOUT</a>
+        <a href="index.html" class="active">WORKS</a>
+        <a href="exhibition.html">EXHIBITION</a>
+        <a href="https://www.instagram.com/seungjin_yang_/" target="_blank">INSTAGRAM</a>
+    </div>
+
+    <main class="detail-container">
+        
+        <div class="detail-text-area">
+            <div class="d-title">프리즘 팟팟 (100×100×90mm) </div>
+            <div class="d-desc">
+             프리즘 팟팟의 가장 두드러진 특징은 팟팟 전체를 감싸고 있는 정교한 기하학적 패턴입니다. 이러한 구조적인 특징 덕분에 팟팟은 탁월한 입체적인 질감을 갖게 됩니다. 빛이 닿는 각도에 따라 이 패턴은 팟팟 표면에 다양한 명암과 입체적인 그림자를 연속적으로 만들어내며, 단순한 흰색 표면에도 시각적인 깊이감과 풍부한 질감을 선사합니다. 특히 실내 조명 아래에서는 이 그림자와 빛의 유희가 팟팟의 매력을 한층 더 극대화하는 극적인 요소로 작용합니다.
+                     
+            
+            </div>
+        </div>
+
+        <div class="detail-image-area">
+            <img src="https://ecimg.cafe24img.com/pg1138b40302952044/mountcornerbrick/web/upload/NNEditor/20250210/20250208_182801.jpg" alt="Detail 1">
+            
+            <img src="https://ecimg.cafe24img.com/pg1138b40302952044/mountcornerbrick/web/upload/NNEditor/20250210/1738844823001.jpg" alt="Detail 2">
+            
+        </div>
+
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const header = document.getElementById('main-header');
+            const toggleBtn = document.querySelector('.mobile-toggle');
+            const drawer = document.getElementById('mobileDrawer');
+            header.classList.toggle('menu-open');
+            toggleBtn.classList.toggle('open');
+            drawer.classList.toggle('open');
+            document.body.style.overflow = drawer.classList.contains('open') ? 'hidden' : 'auto';
+        }
+    </script>
+</body>
+</html>
